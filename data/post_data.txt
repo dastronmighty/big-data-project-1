@@ -1,0 +1,10 @@
+title,title
+over_18,IsNSFW
+stickied,Isstickied
+locked,Islocked
+edited,Isedited
+created_utc,created
+retrieved_on,retrieved
+num_comments,num_comments
+subreddit,subreddit
+url,url
