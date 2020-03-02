@@ -12,6 +12,7 @@ echo "CREATE TABLE  \`authors\`
 
 echo "CREATE TABLE  \`posts\` 
   (\`id\` int(11) NOT NULL auto_increment, 
+  \`author\` VARCHAR(32) NOT NULL default 'author',
   \`title\` VARCHAR(256) NOT NULL default 'title',    
   \`nsfw\` CHAR(6) NOT NULL default 'FALSE',   
   \`stickied\` CHAR(6) NOT NULL default 'FALSE',   
@@ -36,7 +37,7 @@ insert_authors="INSERT INTO authors (name, flare) VALUES "
 
 mysql -uroot -D "reddit" -e "DROP TABLE IF EXISTS posts;"
 mysql -uroot -D "reddit" -e "SOURCE post_script.sql;"
-insert_posts="INSERT INTO posts (title, nsfw, stickied, locked, edited, created, retrieved, num_comments, subreddit, url) VALUES "
+insert_posts="INSERT INTO posts (author, title, nsfw, stickied, locked, edited, created, retrieved, num_comments, subreddit, url) VALUES "
 ./parse_data_tosql.sh "./data/post_data.csv" "${insert_posts}"
 
 mysql -uroot -D "reddit" -e "DROP TABLE IF EXISTS subreddits;"

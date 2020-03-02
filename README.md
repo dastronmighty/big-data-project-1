@@ -16,7 +16,7 @@
 - mysql: Ver 8.0.19 for osx10.15 on x86_64 (Homebrew)
 - mongo shell: v4.2.3
 - mongo git version: 6874650b362138df74be53d366bbefc321ea32d4
-- Entry to sql via: `mysql.service start`
+- Entry to sql via: `mysql.server start`
 - Entry to mongo via: `mongod --dbpath=/Users/user/data/db --fork --syslog`
 
 ## Run

@@ -1,3 +1,4 @@
+author,auhtor
 title,title
 over_18,IsNSFW
 stickied,Isstickied
