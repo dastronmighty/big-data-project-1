@@ -1,13 +1,3 @@
-# COMP30770 - Project 1
-
-## Author:
-
-### - Eoghan Hogan
-
-### - 17335293
-
-### - eoghan.hogan@ucdconnect.ie
-
 # How To Run:
 
 ## System Requirements
